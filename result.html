@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Student Marksheet Input</h2>
+    <div id="errorMessage" class="error"></div>
+
+    <div class="input-group">
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName">
+    </div>
+    <div class="input-group">
+        <label for="rollNo">Std No. (Roll Number):</label>
+        <input type="text" id="rollNo">
+    </div>
+
+    <h3>Subject Marks (out of 100)</h3>
+    <div class="input-group">
+        <label for="english">English:</label>
+        <input type="number" id="english" min="0" max="100">
+    </div>
+    <div class="input-group">
+        <label for="maths">Maths:</label>
+        <input type="number" id="maths" min="0" max="100">
+    </div>
+    <div class="input-group">
+        <label for="science">Science:</label>
+        <input type="number" id="science" min="0" max="100">
+    </div>
+    <div class="input-group">
+        <label for="socialStudies">Social Studies:</label>
+        <input type="number" id="socialStudies" min="0" max="100">
+    </div>
+    <div class="input-group">
+        <label for="computer">Computer:</label>
+        <input type="number" id="computer" min="0" max="100">
+    </div>
+    <div class="input-group">
+        <label for="urdu">Urdu:</label>
+        <input type="number" id="urdu" min="0" max="100">
+    </div>
+    
+    <button onclick="calculateMarksheet()">Calculate Marksheet</button>
+
+    <div class="result-box" id="results">
+        <h3>Results:</h3>
+        <p>Total Marks: <span id="totalMarks"></span></p>
+        <p>Percentage: <span id="percentage"></span>%</p>
+        <p>Grade: <span id="grade" class="success"></span></p>
+    </div>
+</div>
+<script src="js/result.js"></script>
+</body>
+</html>
